@@ -1,0 +1,30 @@
+{
+    "resourceType": "ValueSet",
+    "description" : "This value set contains codes that refer to web services or devices",
+    "status": "active",
+    "publisher" : "SMART Health IT", 
+    "name": "Web services or devices",
+    "compose": {
+        "include": [
+            {
+                "system": "http://omronhealthcare.com",
+                "concept": [
+                    {
+                        "code": "omronBloodPressure",
+                        "display": "OMRON Blood Pressure"
+                    }
+                ]
+            }
+        ]
+    }
+}
+
+
+
+
+                    
+                    
+
+
+
+

@@ -1,0 +1,250 @@
+<div id="requestblock">
+	<div class="row">
+		<div class="col-md-8">
+			<form onsubmit="return false">
+				<div class="card">
+					<div class="card-header">
+						<b class="card-title">New Request</b>
+					</div>
+					<div class="card-body">
+						<div class="form-group">
+							<div class="row">
+								<div class="col-3">
+									<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+										aria-orientation="vertical">
+										<a class="nav-link active" id="v-pills-questionnaires-tab" data-toggle="pill"
+											href="#questionnaires" role="tab"
+											aria-controls="v-pills-questionnaires"
+											aria-selected="true">Questionnaires</a>
+										<a class="nav-link" id="v-pills-promis-tab" data-toggle="pill"
+											href="#promis" role="tab" aria-controls="v-pills-promis"
+											aria-selected="false">PROMIS</a>
+										<a class="nav-link" id="v-pills-activetasks-tab" data-toggle="pill"
+											href="#activetasks" role="tab" aria-controls="v-pills-activetasks"
+											aria-selected="false">Active Tasks</a>
+										<a class="nav-link" id="v-pills-activity-tab" data-toggle="pill"
+											href="#activity" role="tab" aria-controls="v-pills-activity"
+											aria-selected="false">Activity</a>
+										<a class="nav-link" id="v-pills-devices-tab" data-toggle="pill"
+											href="#devices" role="tab" aria-controls="v-pills-devices"
+											aria-selected="false">Devices</a>
+										<a class="nav-link" id="v-pills-healthkit-tab" data-toggle="pill"
+											href="#healthkit" role="tab" aria-controls="v-pills-healthkit"
+											aria-selected="false">iOS Health</a>
+									</div>
+								</div>
+								<div class="col-9">	
+									<div class="tab-content" id="v-pills-tabContent">
+
+										<div class="tab-pane fade show active" id="questionnaires"
+											role="tabpanel" aria-labelledby="v-pills-questionnaires-tab">
+											<select name="instrumentselected-questionnaire"
+												id="instrumentselected-questionnaire"
+												class="form-control questionnaires-selector" style="font-weight:500">
+												{% if questionnaires != None %}
+												{% for questionnaire in questionnaires  %}
+												<option value="{{questionnaire.type}}|{{questionnaire.identifier}}">{{questionnaire.title}}</option>
+												{% endfor %}
+												{% endif %}
+											</select>
+										</div>
+										<div class="tab-pane fade" id="promis" role="tabpanel"
+											aria-labelledby="v-pills-promis-tab">
+											<select name="instrumentselected-promis" id="instrumentselected-promis"
+												class="form-control promis-selector" style="font-weight:500">
+												{% for ipromis in promis  %}
+												<option value="{{ipromis.type}}|{{ipromis.identifier}}">{{ipromis.title}}</option>
+												{% endfor %}
+											</select>
+										</div>
+										<div class="tab-pane fade" id="activetasks" role="tabpanel"
+											aria-labelledby="v-pills-activetasks-tab">
+											<select name="instrumentselected-activetasks"
+												id="instrumentselected-activetasks"
+												class="form-control activetasks-selector" style="font-weight:500">
+												{% for activetask in activetasks  %}
+												<option value="{{activetask.type}}|{{activetask.identifier}}">{{activetask.title}}</option>
+												{% endfor %}
+											</select>
+
+										</div>
+										<div class="tab-pane fade" id="activity" role="tabpanel"
+											aria-labelledby="v-pills-activity-tab">
+											<select name="instrumentselected-activity" id="instrumentselected-activity"
+												class="form-control activity-selector" style="font-weight:500">
+												{% for activity in activityInstruments  %}
+												<option value="{{activity.type}}|{{activity.identifier}}">{{activity.title}}</option>
+												{% endfor %}
+											</select>
+										</div>
+
+
+										<div class="tab-pane fade" id="healthkit" role="tabpanel"
+											aria-labelledby="v-pills-activity-tab">
+											<select name="instrumentselected-healthkit"
+												id="instrumentselected-healthkit"
+												class="form-control healthkit-selector" style="font-weight:500">
+												{% for data in healthkit  %}
+												<option value="{{data}}">{{data}}</option>
+												{% endfor %}
+											</select>
+										</div>
+
+
+										<div class="tab-pane fade" id="devices" role="tabpanel"
+											aria-labelledby="v-pills-activity-tab">
+											<select name="instrumentselected-devices" id="instrumentselected-devices"
+												class="form-control devices-selector" style="font-weight:500">
+												{% for instrument in devices  %}
+												<option value="{{instrument.type}}|{{instrument.identifier}}">{{instrument.title}}</option>
+												{% endfor %}
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							
+							
+
+
+
+						</div>
+
+
+						<div class="form-group" id="schedule-group">
+							<div class="form-group">
+								<label class="schedule">
+									Schedule
+									<span class="text-muted normal-weight small">(Instant: Immediate)</span>
+
+								</label>
+								<div class="row">
+									<div class="col-sm-9">
+										<label class="radio-inline"><input type="radio" name="scheduletype"
+												value="instant"> Instant</label>
+										<label class="radio-inline"><input type="radio" name="scheduletype"
+												value="weekly"> Weekly</label>
+										<label class="radio-inline"><input type="radio" name="scheduletype"
+												value="monthly"> Monthly</label>
+									</div>
+
+								</div>
+								<div class="row" id="dategroup">
+									<div class="col-sm-6">
+										<label>Start Date</label>
+										<input type="date" id="startdate" max="3000-12-31" class="form-control">
+									</div>
+									<div class="col-sm-6">
+										<label>End Date</label>
+										<input type="date" id="enddate" max="3000-12-31" class="form-control">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<button type='submit' id='submitBtn' onclick="requestInstrument()">Submit</button>
+						</div>
+					</div>
+
+
+
+				</div>
+			</form>
+		</div>
+		<div class="col-md-4">
+			<div class="card">
+				<div class="card-header">
+						<b class="card-title">Active Requests</b>
+				</div>
+				<div class="card-body">
+					{% if requests %}
+					<div class="list-group" id="requestlist">
+						{% for req in requests %}
+						<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+							<div class="d-flex w-100 justify-content-between">
+								<span class="mb-1">{{req.instrument.title}}</span>
+								<small>#{{req.identifier}}</small>
+							</div>
+							<!-- <p class="mb-1">REQ#: {{req.fhirId}}</p> -->
+							<small>Practitioner: {{req.requestername}}</small>
+						</a>
+						{% endfor %}
+					</div>
+					{% else %}
+					<p> --- </p>
+					{% endif %}
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</div>
+<!-- Button to Open the Modal -->
+<!-- <button id="modalBtn" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+	Open modal
+  </button> -->
+  
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+  
+		<!-- Modal Header -->
+		<div class="modal-header">
+		  <h4 class="modal-title">Modal Heading</h4>
+		  <button type="button" class="close" data-dismiss="modal">&times;</button>
+		</div>
+  
+		<!-- Modal body -->
+		<div class="modal-body">
+		  Modal body..
+		</div>
+  
+		<!-- Modal footer -->
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		</div>
+  
+	  </div>
+	</div>
+  </div>
+
+
+<script type="text/javascript">
+function requestInstrument(){
+
+	var $activeTab = $('.tab-content .tab-pane.active');
+	var activeId = $activeTab.attr('id');
+	var list = '#instrumentselected-' + activeId + ' option:selected';
+	var instrument_meta = $(list).attr('value').split("|", 2);
+	var instrument_type = instrument_meta[0];
+	var instrument_id   = instrument_meta[1];
+	var startDate = $('#startdate').val();
+	var enddate = $('#enddate').val();
+	var schedule_type = $('input[name=scheduletype]:checked').val();
+
+	$.getJSON($SCRIPT_ROOT + '/requests/new', {
+		instrumenttype: instrument_type,
+		instrumentid: instrument_id,
+		sch_type: schedule_type,
+		start: startDate,
+		end: enddate
+
+	},function(data) { 
+
+		var request_box = 
+		'<button type="button" id="'+data.result.request_id+'" class="btn btn-default btn-block" > '+data.result.request_title+'</button>';
+		$('#requestlist').append(request_box);
+		var msg = 'Request created for ' + data.result.request_title
+		$('.modal-body').text(msg);
+		$('.modal-title').text('Created Request #' + data.result.request_id);
+		$("#myModal").modal();
+	});
+
+	return false;
+};
+
+</script>

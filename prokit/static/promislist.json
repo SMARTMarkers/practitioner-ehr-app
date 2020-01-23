@@ -1,0 +1,334 @@
+{
+    "Form": [
+        {
+            "OID": "FFCDF6E3-8B17-4673-AB38-C677FFF6DBAF",
+            "Name": "PROMIS Bank v1.0 - Anxiety",
+            "LOINC_NUM": "61922-1"
+        },
+        {
+            "OID": "96FE494D-F176-4EFB-A473-2AB406610626",
+            "Name": "PROMIS Bank v1.0 - Depression",
+            "LOINC_NUM": "61952-8"
+        },
+        {
+            "OID": "B3B30AF1-7536-451D-AD39-62A097A5EA4D",
+            "Name": "PROMIS Bank v1.0 - Fatigue",
+            "LOINC_NUM": "61795-1"
+        },
+        {
+            "OID": "C4ADCFAB-6B75-498E-9E94-AFD3BA211DC4",
+            "Name": "PROMIS Bank v1.0 - Pain Behavior",
+            "LOINC_NUM": "62212-6"
+        },
+        {
+            "OID": "F625E32A-B26D-4228-BBC2-DD6C2E4EEA6E",
+            "Name": "PROMIS Bank v1.0 - Sleep Disturbance",
+            "LOINC_NUM": "61982-5"
+        },
+        {
+            "OID": "E038718E-F556-4D0D-9B00-BD178DE6A2C8",
+            "Name": "PROMIS Bank v1.0 - Sleep-Related Impairment",
+            "LOINC_NUM": "62010-4"
+        },
+        {
+            "OID": "FEE4576A-D94F-4E85-8DAB-5A3181BB14CB",
+            "Name": "PROMIS Bank v1.0 - Social Sat DSA",
+            "LOINC_NUM": "62026-0"
+        },
+        {
+            "OID": "36F00430-CC4C-4977-AE8A-0787B3C53AB8",
+            "Name": "PROMIS Bank v1.0 - Social Sat Role",
+            "LOINC_NUM": "62039-3"
+        },
+        {
+            "OID": "E9F0500B-6305-4924-A3B5-A7B3357AF15D",
+            "Name": "PROMIS Bank v1.0 Alcohol: Negative Expectancies",
+            "LOINC_NUM": "76940-6"
+        },
+        {
+            "OID": "A841AF31-A0A1-4FB0-8DC6-B5AF77DE2877",
+            "Name": "PROMIS Bank v1.0 Alcohol: Positive Expectancies",
+            "LOINC_NUM": "76889-5"
+        },
+        {
+            "OID": "5211C7AF-8F4A-4648-90A6-ECE5669AE0EF",
+            "Name": "PROMIS Bank v2.0 - Ability to Participate Social",
+            "LOINC_NUM": "76787-1"
+        },
+        {
+            "OID": "2AA90C1B-FDB2-417C-AE38-F2DF20DA04D9",
+            "Name": "PROMIS Bank v2.0 - Cog Function Abilities Subset",
+            "LOINC_NUM": "81492-1"
+        },
+        {
+            "OID": "EFDEC04D-E708-4916-9F8B-0CA1B2E14467",
+            "Name": "PROMIS Bank v2.0 - Cognitive Function",
+            "LOINC_NUM": "81524-1"
+        },
+        {
+            "OID": "29654543-C99B-4CE9-884B-3D401B4AD857",
+            "Name": "PROMIS Bank v2.0 - Emotional Support",
+            "LOINC_NUM": "76789-7"
+        },
+        {
+            "OID": "9A2F920A-F470-4F3A-B82E-EC9D19F38F8D",
+            "Name": "PROMIS Bank v2.0 - Informational Support",
+            "LOINC_NUM": "76790-5"
+        },
+        {
+            "OID": "48AA3E5F-CDE6-4FAE-819A-D65992D539C6",
+            "Name": "PROMIS Bank v2.0 - Instrumental Support",
+            "LOINC_NUM": "76791-3"
+        },
+        {
+            "OID": "612ADAF7-0C0E-4D16-9236-C8006F84759A",
+            "Name": "PROMIS Bank v2.0 - Satisfaction Roles Activities",
+            "LOINC_NUM": "76774-9"
+        },
+        {
+            "OID": "8D79D960-EC12-4242-AE66-03EF8EF4D61D",
+            "Name": "PROMIS Bank v2.0 - Social Isolation",
+            "LOINC_NUM": "76806-9"
+        },
+        {
+            "OID": "4AFAF9D2-8D23-419E-9094-8B89D47A6A90",
+            "Name": "PROMIS Pediatric SF v1.1 - Anxiety 8b",
+            "LOINC_NUM": "77875-3"
+        },
+        {
+            "OID": "7224FB55-81D7-4131-A136-8C89907CDFBB",
+            "Name": "PROMIS Scale v1.0 - Pain Intensity 3a",
+            "LOINC_NUM": "75259-2"
+        },
+        {
+            "OID": "65958F02-3B6D-47CF-B6D7-F682EDBE7004",
+            "Name": "PROMIS SF v1.0 - Anxiety 7a",
+            "LOINC_NUM": "62190-4"
+        },
+        {
+            "OID": "85619989-D4A7-4EC5-BF08-A4412DCBDD75",
+            "Name": "PROMIS SF v1.0 - Fatigue 7a",
+            "LOINC_NUM": "62192-0"
+        },
+        {
+            "OID": "E87BAC2A-D658-4E80-87F8-E891152DBC7C",
+            "Name": "PROMIS SF v1.0 - Pain Behavior 7a",
+            "LOINC_NUM": "62194-6"
+        },
+        {
+            "OID": "0AB0CD9F-94AA-492D-A360-A2124BAB0B7F",
+            "Name": "PROMIS SF v1.0 - Pain Interference 6b",
+            "LOINC_NUM": "62193-8"
+        },
+        {
+            "OID": "F95F01E8-027A-4524-A1D7-0AAEF489B272",
+            "Name": "PROMIS SF v1.0 - Phys. Function 10a",
+            "LOINC_NUM": "62199-5"
+        },
+        {
+            "OID": "30B25224-346C-46F2-A9C7-276EC1731226",
+            "Name": "PROMIS SF v1.0 - Phys. Function 20a",
+            "LOINC_NUM": "76702-0"
+        },
+        {
+            "OID": "E28D33B7-B772-4B2D-A1CE-D640D030D5E5",
+            "Name": "PROMIS SF v1.0 - Sleep Disturb 8b",
+            "LOINC_NUM": "62197-9"
+        },
+        {
+            "OID": "309591DB-4E0E-4A52-8B89-FA965EF4F70C",
+            "Name": "PROMIS SF v1.0 - Sleep-Related Impairment 8a",
+            "LOINC_NUM": "62198-7"
+        },
+        {
+            "OID": "DBE92586-E64D-428B-B5D8-194FAC4F984A",
+            "Name": "PROMIS SF v1.0 - Social Sat DSA 7a",
+            "LOINC_NUM": "62195-3"
+        },
+        {
+            "OID": "5BEC1DD4-C558-44EA-A5F7-AD3793A4F37A",
+            "Name": "PROMIS SF v1.0 - Social Sat Role 7a",
+            "LOINC_NUM": "62196-1"
+        },
+        {
+            "OID": "E09E32C0-4D6C-4183-8A98-D65E6FE23CD8",
+            "Name": "PROMIS SF v1.0 Alcohol: Negative Expectancies 7a",
+            "LOINC_NUM": "77005-7"
+        },
+        {
+            "OID": "623FE6B4-107D-4A3F-88AB-B5343DCEA939",
+            "Name": "PROMIS SF v1.0 Alcohol: Positive Expectancies 7a",
+            "LOINC_NUM": "77006-5"
+        },
+        {
+            "OID": "6C13662F-179A-45AD-A8DF-16843D902E28",
+            "Name": "PROMIS SF v1.0-Anxiety 4a",
+            "LOINC_NUM": "76344-1"
+        },
+        {
+            "OID": "597A9B24-5B5C-487D-9606-451355DC6E3D",
+            "Name": "PROMIS SF v1.0-Depression 4a",
+            "LOINC_NUM": "76343-3"
+        },
+        {
+            "OID": "73C3CE61-433B-4E18-9479-DE0B7E9DD2C8",
+            "Name": "PROMIS SF v1.0-Depression 8a",
+            "LOINC_NUM": "62191-2"
+        },
+        {
+            "OID": "2E25400B-9373-4631-B769-2E4D466EED04",
+            "Name": "PROMIS SF v1.0-Fatigue 4a",
+            "LOINC_NUM": "76342-5"
+        },
+        {
+            "OID": "C1E44752-BCBD-4130-A307-67F6758F3891",
+            "Name": "PROMIS SF v1.0-Pain Interference 8a",
+            "LOINC_NUM": "75870-6"
+        },
+        {
+            "OID": "795B07C1-067E-4FBD-9B60-A57985E69B5D",
+            "Name": "PROMIS SF v1.0-Sleep Disturbance 4a",
+            "LOINC_NUM": "75258-4"
+        },
+        {
+            "OID": "EFB1133D-429E-4C9D-B322-32C614CB3C9D",
+            "Name": "PROMIS SF v1.0-Sleep Disturbance 6a",
+            "LOINC_NUM": "76703-8"
+        },
+        {
+            "OID": "70991097-C29B-4D49-8F28-1026AA32C374",
+            "Name": "PROMIS SF v1.0-Social Sat Role 4a",
+            "LOINC_NUM": "76704-6"
+        },
+        {
+            "OID": "CA9FB9D0-B5A7-478D-8D6B-A364EA9F1778",
+            "Name": "PROMIS SF v1.0-Social Sat Role 8a",
+            "LOINC_NUM": "76701-2"
+        },
+        {
+            "OID": "5FC725DA-E297-4D4C-988D-BA4D2FA87D62",
+            "Name": "PROMIS SF v1.1 - Global Health",
+            "LOINC_NUM": "61576-5"
+        },
+        {
+            "OID": "22257A5E-4655-4097-AAFE-4DEC11E4240C",
+            "Name": "PROMIS SF v2.0 - Ability to Participate Social 8a",
+            "LOINC_NUM": "76731-9"
+        },
+        {
+            "OID": "C1014465-7C7C-4ADF-B57A-C4F53D9024C6",
+            "Name": "PROMIS SF v2.0 - Cog Function Abilities Subset 4a",
+            "LOINC_NUM": "81525-8"
+        },
+        {
+            "OID": "92B93DC1-6CD7-4A7A-AAC9-61195A60C09E",
+            "Name": "PROMIS SF v2.0 - Cog Function Abilities Subset 6a",
+            "LOINC_NUM": "81526-6"
+        },
+        {
+            "OID": "E72F5F0F-0174-41C7-93B5-BCA29561B3EA",
+            "Name": "PROMIS SF v2.0 - Cog Function Abilities Subset 8a",
+            "LOINC_NUM": "81527-4"
+        },
+        {
+            "OID": "A0511754-DFB1-4492-81D9-1FC3ED3DD31C",
+            "Name": "PROMIS SF v2.0 - Cognitive Function 4a",
+            "LOINC_NUM": "81528-2"
+        },
+        {
+            "OID": "9F601C2B-1DF3-4D0E-ADA4-BC9622ACA8FF",
+            "Name": "PROMIS SF v2.0 - Cognitive Function 6a",
+            "LOINC_NUM": "81529-0"
+        },
+        {
+            "OID": "B6731EF7-BCB5-4AE3-9A11-618BF8A9A5ED",
+            "Name": "PROMIS SF v2.0 - Cognitive Function 8a",
+            "LOINC_NUM": "81530-8"
+        },
+        {
+            "OID": "AE769770-EA2C-44B5-8C20-47BE4CC3C0C7",
+            "Name": "PROMIS SF v2.0 - Companionship 4a",
+            "LOINC_NUM": "76732-7"
+        },
+        {
+            "OID": "CE6F55D7-72C5-43AC-B8D6-5DC5F06C19A0",
+            "Name": "PROMIS SF v2.0 - Companionship 6a",
+            "LOINC_NUM": "76733-5"
+        },
+        {
+            "OID": "677C25ED-A3F2-482F-81BA-1F47372EB079",
+            "Name": "PROMIS SF v2.0 - Emotional Support 4a",
+            "LOINC_NUM": "76735-0"
+        },
+        {
+            "OID": "3A90D004-B7C0-45A2-9F15-8F3D0A5DB624",
+            "Name": "PROMIS SF v2.0 - Emotional Support 6a",
+            "LOINC_NUM": "76734-3"
+        },
+        {
+            "OID": "CAEAB8FF-AA11-4C39-B089-F0AE5DDF50F0",
+            "Name": "PROMIS SF v2.0 - Emotional Support 8a",
+            "LOINC_NUM": "76736-8"
+        },
+        {
+            "OID": "A2207272-A02D-4054-9F3A-6657F126145F",
+            "Name": "PROMIS SF v2.0 - Informational Support 4a",
+            "LOINC_NUM": "76792-1"
+        },
+        {
+            "OID": "4265C141-1CC3-4AC1-B923-1B017D5B99C3",
+            "Name": "PROMIS SF v2.0 - Informational Support 6a",
+            "LOINC_NUM": "76793-9"
+        },
+        {
+            "OID": "DE8A523D-4ED6-42DE-86E7-5F316F2A5E41",
+            "Name": "PROMIS SF v2.0 - Informational Support 8a",
+            "LOINC_NUM": "76794-7"
+        },
+        {
+            "OID": "1B66CDEA-2687-4CF8-A642-9432A13A7272",
+            "Name": "PROMIS SF v2.0 - Instrumental Support 4a",
+            "LOINC_NUM": "76795-4"
+        },
+        {
+            "OID": "14E62814-47E0-493A-94AB-4CCA0B91DB73",
+            "Name": "PROMIS SF v2.0 - Instrumental Support 6a",
+            "LOINC_NUM": "76796-2"
+        },
+        {
+            "OID": "01F49173-B771-4F86-AB36-D4B400DB3042",
+            "Name": "PROMIS SF v2.0 - Instrumental Support 8a",
+            "LOINC_NUM": "76797-0"
+        },
+        {
+            "OID": "2AF69E2C-7571-475B-A5DE-E77AF1DF4A17",
+            "Name": "PROMIS SF v2.0 - Satisfaction Roles Activities 4a",
+            "LOINC_NUM": "76798-8"
+        },
+        {
+            "OID": "F307C590-0036-4A7B-A1D2-E54AAD80DFE8",
+            "Name": "PROMIS SF v2.0 - Satisfaction Roles Activities 6a",
+            "LOINC_NUM": "76799-6"
+        },
+        {
+            "OID": "3FA74A09-E5C2-45EA-9682-DB4A02FDC81B",
+            "Name": "PROMIS SF v2.0 - Satisfaction Roles Activities 8a",
+            "LOINC_NUM": "76800-2"
+        },
+        {
+            "OID": "BE5C09D1-1FB2-474C-B17C-8EC8F98F396D",
+            "Name": "PROMIS SF v2.0 - Social Isolation 4a",
+            "LOINC_NUM": "76801-0"
+        },
+        {
+            "OID": "809C28F7-6E4A-4918-924A-4395F0D42962",
+            "Name": "PROMIS SF v2.0 - Social Isolation 6a",
+            "LOINC_NUM": "76802-8"
+        },
+        {
+            "OID": "09676A0F-DAF2-4691-9DE7-627908837C32",
+            "Name": "PROMIS SF v2.0 - Social Isolation 8a",
+            "LOINC_NUM": "76803-6"
+        }
+    ]
+}

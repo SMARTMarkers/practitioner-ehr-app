@@ -1,0 +1,30 @@
+{
+    "resourceType": "ValueSet",
+    "description" : "Health Activity ValueSet",
+    "status": "active",
+    "publisher" : "SMART Health IT", 
+    "name": "Health activity data capture that is available through SMART Markers based mobile applications",
+    "compose": {
+        "include": [
+            {
+                "system": "http://loinc.org",
+                "concept": [
+                    {
+                        "code": "41950-7",
+                        "display": "Number of steps in 24 hour Measured"
+                    }
+                ]
+            }
+        ]
+    }
+}
+
+
+
+
+                    
+                    
+
+
+
+

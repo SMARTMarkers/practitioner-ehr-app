@@ -1,0 +1,82 @@
+{
+    "resourceType": "ValueSet",
+    "description" : "This value set contains coded references to the active task modules found in ResearchKit",
+    "status": "active",
+    "publisher" : "SMART Health IT", 
+    "name": "Active Tasks in ResearchKit supported by SMART Markers. Requires the use of iOS devices and apps using the SMART Markers framework",
+    "compose": {
+        "include": [
+            {
+                "system": "http://researchkit.org",
+                "concept": [
+                    {
+                        "code": "amslergrid",
+                        "display": "Amsler Grid"
+                    },
+                    {
+                        "code": "towerOfHanoi",
+                        "display": "Tower Of Hanoi"
+                    },
+                    {
+                        "code": "holePegTest",
+                        "display": "9 Peg Hole Test"
+                    },
+                    {
+                        "code": "psat-2",
+                        "display": "Paced Serial Addition test (2sec)"
+                    },
+                    {
+                        "code": "psat-3",
+                        "display": "Paced Serial Addition test (3sec)"
+                    },
+                    {
+                        "code": "rangeofmotion.shoulder.right",
+                        "display": "Right Shoulder Range of Motion"
+                    },
+                    {
+                        "code": "rangeofmotion.shoulder.left",
+                        "display": "Left Shoulder Range of Motion"
+                    },
+                    {
+                        "code": "rangeofmotion.knee.left",
+                        "display": "Left Knee Range of Motion"
+                    },
+                    {
+                        "code": "rangeofmotion.knee.right",
+                        "display": "Right Knee Range of Motion"
+                    },
+                    {
+                        "code": "fingertappingspeed.both",
+                        "display": "Finger Tapping Speed (Both hands)"
+                    },
+                    {
+                        "code": "fingertappingspeed.right",
+                        "display": "Finger Tapping Speed (Right hand)"
+                    },
+                    {
+                        "code": "fingertappingspeed.left",
+                        "display": "Finger Tapping Speed (Left hand)"
+                    },
+                    {
+                        "code": "spatialSpanMemory",
+                        "display": "Spatial Span Memory task"
+                    },
+                    {
+                        "code": "stroopTest",
+                        "display": "Stroop Test"
+                    }
+                ]
+            }
+        ]
+    }
+}
+
+
+
+
+                    
+                    
+
+
+
+

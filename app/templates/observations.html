@@ -1,0 +1,25 @@
+    <div id="observations-page">
+	<div class="row">
+		{% for result in observations  %}
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-header">
+                    <b class="card-title">{{result.identifier}} <span class="badge badge-secondary">3</span>
+                    </b>
+                    <br>
+                    <span class="badge badge-primary">Active</span><span class="text-muted small">Code: {{result.code}}
+                        <br>Recent:</span>
+                    <br>
+                </div>
+                <div class="card-body">
+                    <div class="container">
+                        <div id="identifier-chart"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        {% endfor %}
+    </div> 
+
+</div>
