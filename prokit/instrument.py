@@ -18,7 +18,7 @@ class PROInstrument(object):
         """ Version 
         Type `str`."""
 
-        self.instrumenttype = None
+        self.type = None
         """ Type: device|survey|activetask|
         Type `str`."""
 
@@ -52,16 +52,16 @@ class PROInstrument(object):
     @classmethod
     def fromQuestionnaire(cls, q=questionnaire.Questionnaire): 
         instrument = PROInstrument() 
-        instrument.title = q.title or q.name
+        instrument._title = q.title or q.name or f'#{q.id}'
         instrument.identifier = q.id
         instrument.resource = q
-        instrument.instrumenttype = 'survey'
+        instrument.type = 'survey'
         instrument.version = q.version
         if q.code is not None:
             qcoding = q.code[0]
             instrument.code = qcoding.code
             instrument.codesystem = qcoding.system
-            instrument.title = q.title or q.name or qcoding.display
+            instrument._title = q.title or q.name or qcoding.display
         return instrument
 
 
@@ -83,15 +83,6 @@ class PROInstrument(object):
                     instruments.append(instrument) 
 
         return instruments
-
-
-
-
-
-    def startSession(self): 
-        from instrumentrenderer import InstrumentRenderer 
-        return InstrumentRenderer(self) 
-   
 
 
 

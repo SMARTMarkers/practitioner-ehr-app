@@ -158,9 +158,10 @@ class PRORequest(object):
             serviceRequest.code = fhirutils.FHIRUtils.codeableconcept(instr.code, instr.codesystem, instr.title)
 
         # Tag Patient
-        patientreference = fhirreference.FHIRReference() 
-        patientreference.reference = f'Patient/{patient.id}'
-        serviceRequest.subject = patientreference
+        if patient is not None:
+            patientreference = fhirreference.FHIRReference() 
+            patientreference.reference = f'Patient/{patient.id}'
+            serviceRequest.subject = patientreference
 
         # Tag Practitioner
         if practitioner is not None:

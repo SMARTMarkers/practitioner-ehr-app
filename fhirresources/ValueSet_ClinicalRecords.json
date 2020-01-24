@@ -1,0 +1,20 @@
+{
+    "resourceType": "ValueSet",
+    "description" : "This value set contains codes that refer to clinic dervied health data",
+    "status": "active",
+    "publisher" : "SMART Health IT", 
+    "name": "Clinical Record data",
+    "compose": {
+        "include": [
+            {
+                "system": "http://apple.com",
+                "concept": [
+                    {
+                        "code": "com.apple.healthkit.clinicalrecords",
+                        "display": "Clinical Records (iOS Health)"
+                    }
+                ]
+            }
+        ]
+    }
+}

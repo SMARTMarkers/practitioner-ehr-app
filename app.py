@@ -57,30 +57,36 @@ def request_pgd():
 
     instrument_type = request.args.get('instrumenttype')
     instrument_id   = request.args.get('instrumentid')
-    if instrument_id is None or instrument_type is None:
-        return msg('No')
+    schedule_type   = request.args.get('sch_type', 'instant')
+    start_date      = request.args.get('start', None)
+    end_date        = request.args.get('end', None)
 
-    instr = None
-    if instrument_type == 'webrepository':
-        instr = [instr for instr in smart.instrumentlist_devices if instr.identifier == instrument_id][0]
-    elif instrument_type == 'activity':
-        instr = [instr for instr in smart.instrumentList_activity if instr.identifier == instrument_id][0]
-    elif instrument_type == 'survey':
-        instr = [instr for instr in smart.instrumentlist_questionnaires if instr.identifier == instrument_id][0]
-    elif instrument_type == 'activetask':
-        instr = [instr for instr in smart.instrumentlist_activetasks if instr.identifier == instrument_id][0]
+    if schedule_type != 'instant':
+        if not start_date or not end_date:
+            return jsonify(result={'result': 'fail', 'message': 'Please select a start and an end date'})
+
+    result = smart.dispatch_request(instrumenttype=instrument_type, instrumentidentifier=instrument_id, practitioner_resource=app.user_practitioner, schedule_type=schedule_type, start_date=start_date, end_date=end_date)
+    return jsonify(result={'result':'success', 'request_id': result.identifier, 'request_title': result.title})
+
+
     
-    print(f'selected instrument is {instr.identifier}')
 
-    if instr is None:
-        return msg('No')
+    # request_schedule = None
+    # if schedule_type != 'instant':
+    #     if start_date is None or end_date is None:
+    #         return jsonify(result={'result': 'fail', 'message': 'Please select a start and an end date'})
+    #     request_schedule = PROSchedule()
 
-    success = smart.dispatchRequest(selected_instrument=instr, practitioner_resource=app.user_practitioner, selected_schedule=None)
-    print(success)
-    if success:
-        return jsonify(result={'result':'success', 'request_id': success.identifier, 'request_title': success.title})
-    else:
-        return jsonify(result={'result': 'fail'})
+
+    # if instr is None:
+    #     return msg('No')
+
+    # success = smart.dispatchRequest(selected_instrument=instr, practitioner_resource=app.user_practitioner, selected_schedule=None)
+
+    # if success:
+    #     return jsonify(result={'result':'success', 'request_id': success.identifier, 'request_title': success.title})
+    # else:
+    #     return jsonify(result={'result': 'fail'})
 
 @app.route('/index.html')
 def app_main():
@@ -103,8 +109,8 @@ def app_main():
             questionnaires=smart.instrumentlist_questionnaires,
             promis=smart.instrumentlist_promis, 
             activetasks=smart.instrumentlist_activetasks,
-            activityInstruments=smart.instrumentList_activity,
-            healthkit=smart.instrumentlist_healthkit,
+            activityinstruments=smart.instrumentList_activity,
+            clinicalrecords=smart.instrumentlist_clinicalrecords,
             devices=smart.instrumentlist_devices
             )
 
